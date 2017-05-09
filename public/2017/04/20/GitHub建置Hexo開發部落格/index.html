@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>GitHub建置Hexo開發部落格 | 阿賢玩物分享 | Fix your eyes forward on what you can do, not back on what you cannot change.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="環境 (前置)安裝gitgit 官網下載最新版(winsows) 安裝node.jsnods.js 官網下載最新版(windows) Github 與 SSH 連結 (前置)建立一個專案專案名稱為 username.github.io GitConfig12$ git config --global user.name &quot;Your Username&quot;$ git config --global us">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub建置Hexo開發部落格">
+<meta property="og:url" content="https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/index.html">
+<meta property="og:site_name" content="阿賢玩物分享">
+<meta property="og:description" content="環境 (前置)安裝gitgit 官網下載最新版(winsows) 安裝node.jsnods.js 官網下載最新版(windows) Github 與 SSH 連結 (前置)建立一個專案專案名稱為 username.github.io GitConfig12$ git config --global user.name &quot;Your Username&quot;$ git config --global us">
+<meta property="og:image" content="https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/1.png">
+<meta property="og:updated_time" content="2017-05-09T09:53:20.830Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub建置Hexo開發部落格">
+<meta name="twitter:description" content="環境 (前置)安裝gitgit 官網下載最新版(winsows) 安裝node.jsnods.js 官網下載最新版(windows) Github 與 SSH 連結 (前置)建立一個專案專案名稱為 username.github.io GitConfig12$ git config --global user.name &quot;Your Username&quot;$ git config --global us">
+<meta name="twitter:image" content="https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/1.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="阿賢玩物分享" href="/Blogger/atom.xml">
+    
+    <link rel="shortcut icon" href="/Blogger/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/Blogger/img/brand.jpg)">
+      <div class="brand">
+        <a href="/Blogger/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/Blogger/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">阿賢</h5>
+          <a href="mailto:sain801028@gmail.com" title="sain801028@gmail.com" class="mail">sain801028@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/Blogger/"  >
+                <i class="icon icon-lg icon-home"></i>
+                首頁
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Blogger/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                檔案
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Blogger/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                標籤
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Blogger/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                類別
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://sain801028.github.io/Blogger/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">GitHub建置Hexo開發部落格</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">GitHub建置Hexo開發部落格</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-04-20T04:21:19.000Z" itemprop="datePublished" class="page-time">
+  2017-04-20
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/Blogger/categories/Blogger/">Blogger</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#環境-前置"><span class="post-toc-number">1.</span> <span class="post-toc-text">環境 (前置)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安裝git"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">安裝git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安裝node-js"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安裝node.js</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Github-與-SSH-連結-前置"><span class="post-toc-number">2.</span> <span class="post-toc-text">Github 與 SSH 連結 (前置)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#建立一個專案"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">建立一個專案</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#GitConfig"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">GitConfig</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#產生SSH"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">產生SSH</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#複製-rsa金鑰-github"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">複製 rsa金鑰 github</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#確認SSH-key-是否正常"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">確認SSH key 是否正常</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo建置"><span class="post-toc-number">3.</span> <span class="post-toc-text">Hexo建置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#開始建置部落格"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">開始建置部落格</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安裝hexo"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">安裝hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Hexo-初始化-會建立所有相關套件"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">Hexo 初始化 會建立所有相關套件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主題安裝"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">主題安裝</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#config-yml-設定檔編輯"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">config.yml 設定檔編輯</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加依賴套件"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">添加依賴套件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#本地端測試-可在-localhost-4000-預覽網頁"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">本地端測試 (可在 localhost:4000 預覽網頁)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#生成靜態資料"><span class="post-toc-number">3.8.</span> <span class="post-toc-text">生成靜態資料</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#再次修改-config-yml-設定檔-最下面的deploy-改為"><span class="post-toc-number">3.9.</span> <span class="post-toc-text">再次修改 config.yml 設定檔 最下面的deploy 改為</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#部屬到網站"><span class="post-toc-number">3.10.</span> <span class="post-toc-text">部屬到網站</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用Hexo-寫你的第一篇文章"><span class="post-toc-number">4.</span> <span class="post-toc-text">使用Hexo 寫你的第一篇文章</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#建立文章"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">建立文章</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#加入圖片套件"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">加入圖片套件</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更新"><span class="post-toc-number">5.</span> <span class="post-toc-text">更新</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#新增或編輯文件後-生成靜態檔案後部屬-網站即便更新"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">新增或編輯文件後 生成靜態檔案後部屬 網站即便更新</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#備份"><span class="post-toc-number">6.</span> <span class="post-toc-text">備份</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#備份Hexo的檔案"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">備份Hexo的檔案</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安裝備份套件"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">安裝備份套件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#備份到分支"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">備份到分支</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-GitHub建置Hexo開發部落格"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">GitHub建置Hexo開發部落格</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-04-20 12:21:19" datetime="2017-04-20T04:21:19.000Z"  itemprop="datePublished">2017-04-20</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/Blogger/categories/Blogger/">Blogger</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="環境-前置"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#環境-前置" class="headerlink" title="環境 (前置)"></a>環境 (前置)</h2><h3 id="安裝git"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#安裝git" class="headerlink" title="安裝git"></a>安裝git</h3><p><a href="https://git-scm.com/" target="_blank" rel="external">git 官網下載最新版(winsows)</a></p>
+<h3 id="安裝node-js"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#安裝node-js" class="headerlink" title="安裝node.js"></a>安裝node.js</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">nods.js 官網下載最新版(windows)</a></p>
+<h2 id="Github-與-SSH-連結-前置"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#Github-與-SSH-連結-前置" class="headerlink" title="Github 與 SSH 連結 (前置)"></a>Github 與 SSH 連結 (前置)</h2><h3 id="建立一個專案"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#建立一個專案" class="headerlink" title="建立一個專案"></a>建立一個專案</h3><p>專案名稱為 username.github.io</p>
+<h3 id="GitConfig"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#GitConfig" class="headerlink" title="GitConfig"></a>GitConfig</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"Your Username"</span></div><div class="line">$ git config --global user.email <span class="string">"Your Email"</span></div></pre></td></tr></table></figure>
+<h3 id="產生SSH"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#產生SSH" class="headerlink" title="產生SSH"></a>產生SSH</h3><p>檢查是否產生ssh過<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.SSH</div></pre></td></tr></table></figure></p>
+<p>產生SSH<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;Your Email&quot;</div></pre></td></tr></table></figure></p>
+<p>此時應該會跳出訊息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/SherD/.ssh/id_rsa): Enter跳過</div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): Enter跳過</div><div class="line">Enter same passphrase again: Enter跳過</div></pre></td></tr></table></figure></p>
+<h3 id="複製-rsa金鑰-github"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#複製-rsa金鑰-github" class="headerlink" title="複製 rsa金鑰 github"></a>複製 rsa金鑰 github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat ~/.ssh/id_rsa.pub | pbcopy</div></pre></td></tr></table></figure>
+<p>在github的帳號設定(Personal settings)裡面有個 SSH and GPG keys<br>在SSH keys 點選 New SSH Keys  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Title 金鑰名</div><div class="line">Key 貼上剛才的rsa金鑰</div></pre></td></tr></table></figure>
+<p>點選add SSH key</p>
+<h3 id="確認SSH-key-是否正常"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#確認SSH-key-是否正常" class="headerlink" title="確認SSH key 是否正常"></a>確認SSH key 是否正常</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ssh</span> -T git@github.com</div></pre></td></tr></table></figure>
+<p>第一次會出現選項 請打yes<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host &apos;github.com ()&apos; can&apos;t be established.</div><div class="line">RSA key fingerprint is xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx.</div><div class="line">Are you sure you want to continue connecting (yes/no)?  (yes並enter)</div></pre></td></tr></table></figure></p>
+<p>出現下面訊息代表成功，此時就可使用ssh 存取github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi Sher! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</div></pre></td></tr></table></figure></p>
+<h2 id="Hexo建置"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#Hexo建置" class="headerlink" title="Hexo建置"></a>Hexo建置</h2><h3 id="開始建置部落格"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#開始建置部落格" class="headerlink" title="開始建置部落格"></a>開始建置部落格</h3><p>創建一個blog資料夾，並在資料夾中執行 git bash</p>
+<h3 id="安裝hexo"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#安裝hexo" class="headerlink" title="安裝hexo"></a>安裝hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<h3 id="Hexo-初始化-會建立所有相關套件"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#Hexo-初始化-會建立所有相關套件" class="headerlink" title="Hexo 初始化 會建立所有相關套件"></a>Hexo 初始化 會建立所有相關套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo i</div></pre></td></tr></table></figure>
+<h3 id="主題安裝"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#主題安裝" class="headerlink" title="主題安裝"></a>主題安裝</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:yscoder/hexo-theme-indigo.git themes/indigo</div></pre></td></tr></table></figure>
+<h3 id="config-yml-設定檔編輯"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#config-yml-設定檔編輯" class="headerlink" title="config.yml 設定檔編輯"></a>config.yml 設定檔編輯</h3><p>編輯blog資料夾根目錄的config.yml 將裡面的theme 改為indigo</p>
+<h3 id="添加依賴套件"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#添加依賴套件" class="headerlink" title="添加依賴套件"></a>添加依賴套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-renderer-less --save</div><div class="line">$ npm install hexo-generator-feed --save</div><div class="line">$ npm install hexo-generator-json-content --save</div></pre></td></tr></table></figure>
+<h3 id="本地端測試-可在-localhost-4000-預覽網頁"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#本地端測試-可在-localhost-4000-預覽網頁" class="headerlink" title="本地端測試 (可在 localhost:4000 預覽網頁)"></a>本地端測試 (可在 localhost:4000 預覽網頁)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<h3 id="生成靜態資料"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#生成靜態資料" class="headerlink" title="生成靜態資料"></a>生成靜態資料</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+<h3 id="再次修改-config-yml-設定檔-最下面的deploy-改為"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#再次修改-config-yml-設定檔-最下面的deploy-改為" class="headerlink" title="再次修改 config.yml 設定檔 最下面的deploy 改為"></a>再次修改 config.yml 設定檔 最下面的deploy 改為</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:D-Sher/d-sher.github.io.git  (your sshgit)</div><div class="line">  branch: master</div><div class="line">  message: update</div></pre></td></tr></table></figure>
+<p>###安裝部屬套件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<h3 id="部屬到網站"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#部屬到網站" class="headerlink" title="部屬到網站"></a>部屬到網站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+<h2 id="使用Hexo-寫你的第一篇文章"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#使用Hexo-寫你的第一篇文章" class="headerlink" title="使用Hexo 寫你的第一篇文章"></a>使用Hexo 寫你的第一篇文章</h2><h3 id="建立文章"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#建立文章" class="headerlink" title="建立文章"></a>建立文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n (文章名稱)</div></pre></td></tr></table></figure>
+<p>此時可在 <code>source/_posts/(文章名稱).md</code> 編輯 markdown 檔</p>
+<h3 id="加入圖片套件"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#加入圖片套件" class="headerlink" title="加入圖片套件"></a>加入圖片套件</h3><p>可以增加 一個圖片位置套件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-filter-pathfix --save</div></pre></td></tr></table></figure></p>
+<p>此套件在嵌於網站的資源(圖片 資料)擁有正確的路徑</p>
+<p>例如實際的位置  <code>source/_posts/用github建置Hexo開發部落格/1.png</code></p>
+<p>這邊記得要修改跟目錄的 config.yml 裡面的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">post_asset_folder: true</div></pre></td></tr></table></figure></p>
+<p>我們即可利用嵌入碼<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![範例圖片](1.png)</div></pre></td></tr></table></figure></p>
+<p>最後顯示<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/1.png" alt="範例圖片" title="">
+                </div>
+                <div class="image-caption">範例圖片</div>
+            </figure></p>
+<h2 id="更新"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#更新" class="headerlink" title="更新"></a>更新</h2><h3 id="新增或編輯文件後-生成靜態檔案後部屬-網站即便更新"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#新增或編輯文件後-生成靜態檔案後部屬-網站即便更新" class="headerlink" title="新增或編輯文件後 生成靜態檔案後部屬 網站即便更新"></a>新增或編輯文件後 生成靜態檔案後部屬 網站即便更新</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+<h2 id="備份"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#備份" class="headerlink" title="備份"></a>備份</h2><h3 id="備份Hexo的檔案"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#備份Hexo的檔案" class="headerlink" title="備份Hexo的檔案"></a>備份Hexo的檔案</h3><p>在跟目錄的 config.yml 底下新增一個backup<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">backup:</div><div class="line">    type: git</div><div class="line">    repository:</div><div class="line">       github: git@github.com:D-Sher/d-sher.github.io.git,Hexo (最後面斜線為分支名稱)</div></pre></td></tr></table></figure></p>
+<h3 id="安裝備份套件"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#安裝備份套件" class="headerlink" title="安裝備份套件"></a>安裝備份套件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-git-backup --save</div></pre></td></tr></table></figure>
+<h3 id="備份到分支"><a href="/Blogger/2017/04/20/GitHub建置Hexo開發部落格/#備份到分支" class="headerlink" title="備份到分支"></a>備份到分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo b</div></pre></td></tr></table></figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-05-09T09:53:20.830Z" itemprop="dateUpdated">2017-05-09 17:53:20</time>
+</span><br>
+
+
+        
+    </div>
+    <footer>
+        <a href="https://sain801028.github.io/Blogger">
+            <img src="/Blogger/img/avatar.jpg" alt="阿賢">
+            阿賢
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blogger/tags/Hexo/">Hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GitHub建置Hexo開發部落格》 — 阿賢玩物分享&url=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/&via=https://sain801028.github.io/Blogger" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        總訪客量：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        總訪問量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/Blogger/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>阿賢 &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GitHub建置Hexo開發部落格》 — 阿賢玩物分享&url=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/&via=https://sain801028.github.io/Blogger" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://sain801028.github.io/Blogger/2017/04/20/GitHub建置Hexo開發部落格/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/Blogger/', SHARE: true, REWARD: false };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
