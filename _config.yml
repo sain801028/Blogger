@@ -77,6 +77,4 @@ deploy:
 backup:
     type: git
     repository:
-      github: git@github.com:sain801028/Blogger.git
-      branch: Hexo
-      message: update
+      github: git@github.com:sain801028/Blogger.git,Hexo
